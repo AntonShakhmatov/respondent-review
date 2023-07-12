@@ -47,7 +47,7 @@ class EasyPresenter extends \Nette\Application\UI\Presenter
 
         $randomQuestion = $questions[array_rand($questions)];
 
-        $form->addText('questions', 'Вопрос:')
+        $form->addText('questions', 'Question:')
             ->setDefaultValue($randomQuestion)
             ->setAttribute('readonly', true);
 
@@ -55,7 +55,7 @@ class EasyPresenter extends \Nette\Application\UI\Presenter
 
         $form->addHidden('question', $randomQuestion);
 
-        $form->addSubmit('send', 'Отправить')
+        $form->addSubmit('send', 'Send the answer')
             ->setAttribute('id', 'send-button');
 
         $form->onSuccess[] = [$this, 'sendAnswer'];

@@ -5,6 +5,7 @@ namespace App\Presenters;
 use Nette\Application\UI\Form;
 use Nette\Database\Explorer;
 use Nette\Http\Request;
+use Nette\Utils\DateTime;
 
 class CheckPresenter extends \Nette\Application\UI\Presenter
 
@@ -25,7 +26,7 @@ class CheckPresenter extends \Nette\Application\UI\Presenter
     protected function createComponentVerificationForm(): Form
     {
         $form = new Form;
-        $form->addSubmit('send', 'Посчитать результаты')
+        $form->addSubmit('send', 'Calculate the grades')
             ->setAttribute('id', 'send-button');
 
         $form->addHidden('respondentId')->setDefaultValue($this->getParameter('respondentId'));

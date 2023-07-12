@@ -25,9 +25,9 @@ class AuthPresenter extends \Nette\Application\UI\Presenter
         $form = new Form();
 
         $questions = [
-            'Easy' => 'Просто',
-            'Normal' => 'Средняя сложность',
-            'Hard' => 'Ты не выживешь!',
+            'Easy' => 'Easy',
+            'Normal' => 'Average difficulty',
+            'Hard' => 'You will not survive!',
         ];
 
         $username = $form->addText('username', 'Username:')
@@ -36,8 +36,8 @@ class AuthPresenter extends \Nette\Application\UI\Presenter
         $surname = $form->addText('surname', 'Surname:')
             ->setRequired('Please enter your surname.');
 
-        $form->addSelect('questions', 'Уровень:', $questions)
-            ->setRequired('Выберите уровень.')
+        $form->addSelect('questions', 'Level:', $questions)
+            ->setRequired('Choose your destiny.')
             ->setDefaultValue('Easy');
 
         $submit = $form->addSubmit('login', 'Start')
