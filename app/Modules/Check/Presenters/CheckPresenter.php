@@ -47,5 +47,9 @@ class CheckPresenter extends \Nette\Application\UI\Presenter
         }
         $average = ($count > 0) ? $sum / $count : 0;
         echo $average;
+        $this->database->table('persons')->where('id', $id)->insert([
+            'points' => $average,
+            'date' => new DateTime,
+        ]);
     }
 }
