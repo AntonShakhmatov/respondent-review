@@ -1,4 +1,4 @@
-Automative skill testing system with integrated chatGpt. Checks answers in real time, assigns scores, calculate them. Time for answers is limited by a timer.(Connection to the database is required and the model needs to be configured depending on the table name and its fields) Link: 
+Automative skill testing system with integrated chatGpt. Checks answers in real time, assigns scores, calculate them. Time for answers is limited by a timer.(Connection to the database is required and the model needs to be configured depending on the table name and its fields) Link: http://skill.podudali.beget.tech/auth/
 
 DB: 
 Table('answer'), fields('id', 'name', 'surname', 'answer', 'question', 'level', 'rating', 'date');
