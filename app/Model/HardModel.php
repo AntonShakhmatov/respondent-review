@@ -5,11 +5,8 @@ namespace App\Model;
 use Nette;
 use Nette\Database\Explorer;
 
-class HardModel{
-
-    /**
-     * @param Explorer
-     */
+class HardModel
+{
     private  $database;
     public function __construct(Explorer $database){
         $this->database = $database;

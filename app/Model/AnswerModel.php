@@ -6,10 +6,6 @@ use Nette\Database\Explorer;
 
 class AnswerModel
 {
-
-    /**
-     * @var Explorer
-     */
     private $database;
     public function __construct(Explorer $database)
     {
