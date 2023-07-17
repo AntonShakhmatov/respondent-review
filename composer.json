@@ -24,7 +24,9 @@
 	},
 	"require-dev": {
 		"nette/tester": "^2.4",
-		"symfony/thanks": "^1"
+		"symfony/thanks": "^1",
+		"phpstan/phpstan": "*",
+		"phpstan/phpstan-nette": "^1.2"
 	},
 	"autoload": {
 		"psr-4": {
@@ -33,6 +35,7 @@
 	},
 	"minimum-stability": "stable",
 	"config": {
+		"process-timeout":0,
 		"allow-plugins": {
 			"symfony/thanks": true
 		}

@@ -12,7 +12,7 @@ class AuthModel
         $this->database = $database;
     }
 
-    public function getName(string $name): string
+    public function getName(string $name): void
     {
         
     }

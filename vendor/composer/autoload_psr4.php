@@ -19,6 +19,7 @@ return array(
     'Psr\\Log\\' => array($vendorDir . '/psr/log/src'),
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
     'Psr\\Cache\\' => array($vendorDir . '/psr/cache/src'),
+    'PHPStan\\' => array($vendorDir . '/phpstan/phpstan-nette/src'),
     'Nettrine\\ORM\\' => array($vendorDir . '/nettrine/orm/src'),
     'Nettrine\\DBAL\\' => array($vendorDir . '/nettrine/dbal/src'),
     'Nettrine\\Cache\\' => array($vendorDir . '/nettrine/cache/src'),
